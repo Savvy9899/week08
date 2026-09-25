@@ -9,13 +9,6 @@ on:
     branches:
       - main
 
-  workflow_dispatch:
-    inputs:
-      image_tag:
-        description: "Tested image SHA to deploy"
-        required: true
-        type: string
-
 jobs:
   deploy-production:
     name: Deploy to Production
